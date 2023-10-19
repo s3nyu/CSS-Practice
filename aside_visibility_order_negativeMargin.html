@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Test File </title>
+    <style>
+
+        h1{
+            /* make it completely dissapear */
+            /* display:none; */
+            
+            /* hidden, still takes up the space */
+            /* visibility:hidden; */
+
+            /* important keyword will take the top place */
+            color: blue !important;
+        }
+        
+        .hello{
+            color: red;
+            
+            /* we can have negative margin value */
+            margin-top: -15px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <!-- the class is stronger and can overide the h1 -->
+    <!-- but important keyword are the strongest -->
+    <h1 class="hello"> Hello World! </h1>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa deserunt laboriosam facilis iste cupiditate, consectetur molestias labore perspiciatis eius doloremque!</p>
+</body>
+</html>

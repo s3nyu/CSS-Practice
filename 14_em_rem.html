@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EM & Rem Units</title>
+</head>
+<style>
+    EM
+    /* EM is the parent font size(box-1) times the specific font size(box-1 p) */
+    /* it has no effect if we change the browser font size(very small, small, medium, etc) */
+    /* em will keep it sizes */
+    #box-1{
+        font-size: 20px;
+    }
+
+    #box-1 p{
+        font-size: 1.5em;
+        padding: 1em;
+    }
+
+    #box-1 ul{
+        font-size: 1.2em;
+    }
+
+    /* change the html default font size */
+    /* html{
+        font-size: 10px;
+    }
+
+    /* REM */
+    /* rem based on the root of html element */
+    #box-2 h3{
+        font-size:2rem;
+    }
+
+    #box-2 p{
+        font-size:1.6rem;
+        /* 16(default html) * 1.6 = 25.6px(font size) */
+        line-height:1.7rem;
+    }
+</style>
+    
+<body>
+    <div id="box-1">
+        <h3> Box One</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel totam velit quo voluptatum doloribus porro repellat ducimus natus corporis deleniti!</p>
+    </div>
+
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>4</li>
+    </ul>
+
+    <div id="box-2">
+        <h3> Box Two</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel totam velit quo voluptatum doloribus porro repellat ducimus natus corporis deleniti!</p>
+    </div>
+    
+</body>
+</html>
